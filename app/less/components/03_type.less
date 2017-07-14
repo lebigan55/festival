@@ -1,8 +1,7 @@
 body {
 	font-family: @ff;
-	font-size: @fs;
+	font-size: @fs;	
 }
-
 p {
 	font-size: @fs; 
 	line-height: @lh; 
@@ -11,9 +10,10 @@ p {
 }
 h1 {
 	.fs(@h1);
-	font-weight: 400; 
+	font-weight: 400;
+	text-transform: uppercase; 
 	line-height: @lh; 
-	color: @text-color; 
+	color: @white; 
 	margin: @text-margin;
 }
 h2 {
@@ -68,9 +68,14 @@ a {
 	text-align: left;
 	color: @white;	
 	font-size: 3rem;
-	margin-bottom: 30px;
+	padding-top: 50px;
+	margin-bottom: 15px;
 }
-
+.main-headline span {
+	display: block;
+	font-size: 10rem;
+	color: @white;
+}
 .align-right {text-align: right;}
 
 .table {
