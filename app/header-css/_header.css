@@ -16,9 +16,30 @@ body {
 /* Centered texts in each section
 * --------------------------------------- */
 .section{
+	 max-width: 100%;
+	 height: auto; 
+	 position: relative; 
+}
+.section img {
 	max-width: 100%;
-	height: auto;	
+}
+.logo-top-wrap {
+	 width: 110px;
+	 height: 110px; 
+	 background: #fff;
+	 padding-top: 30px;
+	 position: absolute;
+	 top: 0;
+	 left: -110px;
+}
+.logo-top {
+	 width: 60px;
+	 margin: 0 auto;
 }
 .fp-tableCell {
-	display: block;
+ 	display: block;
+}
+.fp-enabled body {
+	 padding-left: 110px;
+	 background: #000;
 }
