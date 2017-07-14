@@ -566,3 +566,118 @@ input.error {
 label.error {
   color: red;
 }
+#section0 {
+  width: 100%;
+  background: url(../img/bg1.jpg);
+  background-size: cover;
+}
+.controlArrow.prev {
+  left: 50px;
+}
+.controlArrow.next {
+  right: 50px;
+}
+#fp-nav {
+  top: 50%;
+}
+#fp-nav ul li,
+.fp-slidesNav ul li {
+  margin-bottom: 25px;
+  margin-left: 25px;
+}
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  width: 14px;
+  height: 14px;
+  background: transparent;
+  border: 1px solid #e72473;
+}
+#fp-nav ul li:hover a span,
+.fp-slidesNav ul li:hover a span {
+  width: 14px;
+  height: 14px;
+  background: #e72473;
+  border: 1px solid #e72473;
+  margin: -2px 0 0 -2px;
+}
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span {
+  width: 14px;
+  height: 14px;
+  background: #e72473;
+  border: 1px solid #e72473;
+  margin: -2px 0 0 -2px;
+}
+#section1 {
+  width: 100%;
+  background: url(../img/bg2.jpg);
+  background-size: cover;
+}
+#section2 {
+  background: url(../img/bg3.jpg);
+  background-size: cover;
+}
+#section3 {
+  background: url(../img/bg4.jpg);
+  background-size: cover;
+}
+#section4 {
+  background: url(../img/bg5.jpg);
+  background-size: cover;
+}
+#section5 {
+  background: url(../img/bg6.jpg);
+  background-size: cover;
+}
+#section6 {
+  background: #fff;
+}
+#section7 {
+  background: url(../img/bg8.jpg);
+  background-size: cover;
+}
+#footer {
+  position: absolute;
+  -ms-text-align-last: auto;
+  text-align: left;
+  height: 150px;
+  display: block;
+  width: 100%;
+  background: #f9d2c3;
+  z-index: 9;
+  color: #1d1d1b;
+  padding: 0;
+  bottom: 0px;
+}
+.main-footer ul {
+  padding: 0;
+  margin: 0;
+}
+.main-footer ul li {
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  padding-top: 30px;
+}
+.main-footer ul li:first-child {
+  max-width: 400px;
+  width: 100%;
+  margin-left: 165px;
+}
+.main-footer ul li a {
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+}
+.main-footer ul li a img {
+  max-width: 100%;
+}
+/* Bottom menu
+	* --------------------------------------- */
+#infoMenu li a {
+  color: #fff;
+}

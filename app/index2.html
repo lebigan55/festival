@@ -1,246 +1,240 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Horizontal navigation dots - fullPage.js</title>
-	<meta name="author" content="Alvaro Trigo Lopez" />
-	<meta name="description" content="fullPage full-screen navigation and sections control menu." />
-	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,navigation,control arrows, dots" />
-	<meta name="Resource-type" content="Document" />
 
+	<meta charset="utf-8">
 
-	<link rel="stylesheet" type="text/css" href="../jquery.fullPage.css" />
+	<title>Fitness festival</title>
+	<meta name="description" content="">
 	
+	<!-- Bootstrap v3.3.4 Grid Styles -->
+	<style>html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{background-color:#fff}input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a{text-decoration:none}a:hover,a:focus{text-decoration:none}figure{margin:0}img{vertical-align:middle}.img-responsive{display:block;max-width:100%;height:auto}.img-rounded{border-radius:6px}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:4px;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto}.img-circle{border-radius:50%}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}[role="button"]{cursor:pointer}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1100px}}.container-fluid{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}.row{margin-left:-15px;margin-right:-15px}.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{position:relative;min-height:1px;padding-left:15px;padding-right:15px}.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{float:left}.col-xs-12{width:100%}.col-xs-11{width:91.66666667%}.col-xs-10{width:83.33333333%}.col-xs-9{width:75%}.col-xs-8{width:66.66666667%}.col-xs-7{width:58.33333333%}.col-xs-6{width:50%}.col-xs-5{width:41.66666667%}.col-xs-4{width:33.33333333%}.col-xs-3{width:25%}.col-xs-2{width:16.66666667%}.col-xs-1{width:8.33333333%}.col-xs-pull-12{right:100%}.col-xs-pull-11{right:91.66666667%}.col-xs-pull-10{right:83.33333333%}.col-xs-pull-9{right:75%}.col-xs-pull-8{right:66.66666667%}.col-xs-pull-7{right:58.33333333%}.col-xs-pull-6{right:50%}.col-xs-pull-5{right:41.66666667%}.col-xs-pull-4{right:33.33333333%}.col-xs-pull-3{right:25%}.col-xs-pull-2{right:16.66666667%}.col-xs-pull-1{right:8.33333333%}.col-xs-pull-0{right:auto}.col-xs-push-12{left:100%}.col-xs-push-11{left:91.66666667%}.col-xs-push-10{left:83.33333333%}.col-xs-push-9{left:75%}.col-xs-push-8{left:66.66666667%}.col-xs-push-7{left:58.33333333%}.col-xs-push-6{left:50%}.col-xs-push-5{left:41.66666667%}.col-xs-push-4{left:33.33333333%}.col-xs-push-3{left:25%}.col-xs-push-2{left:16.66666667%}.col-xs-push-1{left:8.33333333%}.col-xs-push-0{left:auto}.col-xs-offset-12{margin-left:100%}.col-xs-offset-11{margin-left:91.66666667%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-0{margin-left:0}@media (min-width:768px){.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{float:left}.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}.col-sm-pull-12{right:100%}.col-sm-pull-11{right:91.66666667%}.col-sm-pull-10{right:83.33333333%}.col-sm-pull-9{right:75%}.col-sm-pull-8{right:66.66666667%}.col-sm-pull-7{right:58.33333333%}.col-sm-pull-6{right:50%}.col-sm-pull-5{right:41.66666667%}.col-sm-pull-4{right:33.33333333%}.col-sm-pull-3{right:25%}.col-sm-pull-2{right:16.66666667%}.col-sm-pull-1{right:8.33333333%}.col-sm-pull-0{right:auto}.col-sm-push-12{left:100%}.col-sm-push-11{left:91.66666667%}.col-sm-push-10{left:83.33333333%}.col-sm-push-9{left:75%}.col-sm-push-8{left:66.66666667%}.col-sm-push-7{left:58.33333333%}.col-sm-push-6{left:50%}.col-sm-push-5{left:41.66666667%}.col-sm-push-4{left:33.33333333%}.col-sm-push-3{left:25%}.col-sm-push-2{left:16.66666667%}.col-sm-push-1{left:8.33333333%}.col-sm-push-0{left:auto}.col-sm-offset-12{margin-left:100%}.col-sm-offset-11{margin-left:91.66666667%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-0{margin-left:0}}@media (min-width:992px){.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{float:left}.col-md-12{width:100%}.col-md-11{width:91.66666667%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666667%}.col-md-1{width:8.33333333%}.col-md-pull-12{right:100%}.col-md-pull-11{right:91.66666667%}.col-md-pull-10{right:83.33333333%}.col-md-pull-9{right:75%}.col-md-pull-8{right:66.66666667%}.col-md-pull-7{right:58.33333333%}.col-md-pull-6{right:50%}.col-md-pull-5{right:41.66666667%}.col-md-pull-4{right:33.33333333%}.col-md-pull-3{right:25%}.col-md-pull-2{right:16.66666667%}.col-md-pull-1{right:8.33333333%}.col-md-pull-0{right:auto}.col-md-push-12{left:100%}.col-md-push-11{left:91.66666667%}.col-md-push-10{left:83.33333333%}.col-md-push-9{left:75%}.col-md-push-8{left:66.66666667%}.col-md-push-7{left:58.33333333%}.col-md-push-6{left:50%}.col-md-push-5{left:41.66666667%}.col-md-push-4{left:33.33333333%}.col-md-push-3{left:25%}.col-md-push-2{left:16.66666667%}.col-md-push-1{left:8.33333333%}.col-md-push-0{left:auto}.col-md-offset-12{margin-left:100%}.col-md-offset-11{margin-left:91.66666667%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-9{margin-left:75%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-6{margin-left:50%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-3{margin-left:25%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-0{margin-left:0}}@media (min-width:1200px){.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{float:left}.col-lg-12{width:100%}.col-lg-11{width:91.66666667%}.col-lg-10{width:83.33333333%}.col-lg-9{width:75%}.col-lg-8{width:66.66666667%}.col-lg-7{width:58.33333333%}.col-lg-6{width:50%}.col-lg-5{width:41.66666667%}.col-lg-4{width:33.33333333%}.col-lg-3{width:25%}.col-lg-2{width:16.66666667%}.col-lg-1{width:8.33333333%}.col-lg-pull-12{right:100%}.col-lg-pull-11{right:91.66666667%}.col-lg-pull-10{right:83.33333333%}.col-lg-pull-9{right:75%}.col-lg-pull-8{right:66.66666667%}.col-lg-pull-7{right:58.33333333%}.col-lg-pull-6{right:50%}.col-lg-pull-5{right:41.66666667%}.col-lg-pull-4{right:33.33333333%}.col-lg-pull-3{right:25%}.col-lg-pull-2{right:16.66666667%}.col-lg-pull-1{right:8.33333333%}.col-lg-pull-0{right:auto}.col-lg-push-12{left:100%}.col-lg-push-11{left:91.66666667%}.col-lg-push-10{left:83.33333333%}.col-lg-push-9{left:75%}.col-lg-push-8{left:66.66666667%}.col-lg-push-7{left:58.33333333%}.col-lg-push-6{left:50%}.col-lg-push-5{left:41.66666667%}.col-lg-push-4{left:33.33333333%}.col-lg-push-3{left:25%}.col-lg-push-2{left:16.66666667%}.col-lg-push-1{left:8.33333333%}.col-lg-push-0{left:auto}.col-lg-offset-12{margin-left:100%}.col-lg-offset-11{margin-left:91.66666667%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-0{margin-left:0}}.clearfix:before,.clearfix:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after{content:" ";display:table}.clearfix:after,.container:after,.container-fluid:after,.row:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right !important}.pull-left{float:left !important}.hide{display:none !important}.show{display:block !important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none !important}.affix{position:fixed}@-ms-viewport{width:device-width}.visible-xs,.visible-sm,.visible-md,.visible-lg{display:none !important}.visible-xs-block,.visible-xs-inline,.visible-xs-inline-block,.visible-sm-block,.visible-sm-inline,.visible-sm-inline-block,.visible-md-block,.visible-md-inline,.visible-md-inline-block,.visible-lg-block,.visible-lg-inline,.visible-lg-inline-block{display:none !important}@media (max-width:767px){.visible-xs{display:block !important}table.visible-xs{display:table}tr.visible-xs{display:table-row !important}th.visible-xs,td.visible-xs{display:table-cell !important}}@media (max-width:767px){.visible-xs-block{display:block !important}}@media (max-width:767px){.visible-xs-inline{display:inline !important}}@media (max-width:767px){.visible-xs-inline-block{display:inline-block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm{display:block !important}table.visible-sm{display:table}tr.visible-sm{display:table-row !important}th.visible-sm,td.visible-sm{display:table-cell !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-block{display:block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline{display:inline !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline-block{display:inline-block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md{display:block !important}table.visible-md{display:table}tr.visible-md{display:table-row !important}th.visible-md,td.visible-md{display:table-cell !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-block{display:block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline{display:inline !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline-block{display:inline-block !important}}@media (min-width:1200px){.visible-lg{display:block !important}table.visible-lg{display:table}tr.visible-lg{display:table-row !important}th.visible-lg,td.visible-lg{display:table-cell !important}}@media (min-width:1200px){.visible-lg-block{display:block !important}}@media (min-width:1200px){.visible-lg-inline{display:inline !important}}@media (min-width:1200px){.visible-lg-inline-block{display:inline-block !important}}@media (max-width:767px){.hidden-xs{display:none !important}}@media (min-width:768px) and (max-width:991px){.hidden-sm{display:none !important}}@media (min-width:992px) and (max-width:1199px){.hidden-md{display:none !important}}@media (min-width:1200px){.hidden-lg{display:none !important}}.visible-print{display:none !important}@media print{.visible-print{display:block !important}table.visible-print{display:table}tr.visible-print{display:table-row !important}th.visible-print,td.visible-print{display:table-cell !important}}.visible-print-block{display:none !important}@media print{.visible-print-block{display:block !important}}.visible-print-inline{display:none !important}@media print{.visible-print-inline{display:inline !important}}.visible-print-inline-block{display:none !important}@media print{.visible-print-inline-block{display:inline-block !important}}@media print{.hidden-print{display:none !important}}</style>
+	<!-- Header CSS (First Sections of Website: compress & paste after release from _header.css here) -->
 	<style>
-
-	#section0 {		
-		background: url(img/bg1.jpg);
-		-webkit-background-size: contain;
-		background-size: contain;
-	}
-	#section1 {
-		background: url(img/bg2.jpg);
-		-webkit-background-size: contain;
-		background-size: contain;
-	}
-	#section2 {
-		background: url(img/bg3.jpg);
-		-webkit-background-size: contain;
-		background-size: contain;
-	}
-	#section3 {
-		background: url(img/bg4.jpg);
-		-webkit-background-size: contain;
-		background-size: contain;
-	}
-	#section4 {
-		background: url(img/bg5.jpg);
-		-webkit-background-size: contain;
-		background-size: contain;
-	}
-	#section5 {
-		background: url(img/bg6.jpg);
-		-webkit-background-size: contain;
-		background-size: contain;
-	}
-	#section6 {
-		background: #fff;		
-	}
-	#section7 {
-		background: url(img/bg8.jpg);
-		-webkit-background-size: contain;
-		background-size: contain;
-	}
-	
-	/* Overwriting styles for control arrows for slides
-	* --------------------------------------- */
-	.controlArrow.prev {
-		left: 50px;
-	}
-	.controlArrow.next{
-		right: 50px;
-	}
-	#fp-nav {
-		top: 50%;
-	}
-	#fp-nav ul li, 
-	.fp-slidesNav ul li {
-		margin-bottom: 25px;
-		margin-left: 25px;
-	}
-	#fp-nav ul li a span, 
-	.fp-slidesNav ul li a span {
-		width: 14px;
-		height: 14px;
-		background: transparent;
-		border: 1px solid #e72473;
-	}
-	#fp-nav ul li:hover a span, 
-	.fp-slidesNav ul li:hover a span {
-		width: 14px;
-		height: 14px;
-		background: #e72473;
-		border: 1px solid #e72473;
-		margin: -2px 0 0 -2px;
-	}
-	#fp-nav ul li a.active span, 
-	.fp-slidesNav ul li a.active span, 
-	#fp-nav ul li:hover a.active span, 
-	.fp-slidesNav ul li:hover a.active span {
-		width: 14px;
-		height: 14px;
-		background: #e72473;
-		border: 1px solid #e72473;
-		margin: -2px 0 0 -2px;
-	}
-	#footer{
-		position: absolute;
-		-ms-text-align-last: auto;
-		text-align: left;
-		height: 150px;
-		display:block;
-		width: 100%;
-		background: #f9d2c3;
-		z-index:9;		
-		color: #1d1d1b;
-		padding: 0;
-		bottom:0px;
-	}
-	.main-footer ul {
-		padding: 0;
-		margin: 0;
-	}
-	.main-footer ul li {
-		list-style-type: none;
-		display: inline-block;
-		vertical-align: middle;
-		width: 30px;
-		height: 30px;
-		padding-top: 30px;
-	}
-	.main-footer ul li:first-child {
-		max-width: 400px;
-		width: 100%;
-		margin-left: 165px;
-	}
-	.main-footer ul li a {
-		width: 30px;
-		height: 30px;
-		overflow: hidden;
-	}
-	.main-footer ul li a img {
-		max-width: 100%;
-	}
-	/* Bottom menu
-	* --------------------------------------- */
-	#infoMenu li a {
-		color: #fff;
-	}
-	</style>
+		.loader{background:none repeat scroll 0 0 #fff;bottom:0;height:100%;left:0;position:fixed;right:0;top:0;width:100%;z-index:9999}.loader_inner{background-image:url("img/preloader.gif");background-size:cover;background-repeat:no-repeat;background-position:center center;background-color:#fff;height:60px;width:60px;margin-top:-30px;margin-left:-30px;left:50%;top:50%;position:absolute}
+	</style>	
 
 	<!--[if IE]>
 		<script type="text/javascript">
 			 var console = { log: function() {} };
 		</script>
-	<![endif]-->
+		<![endif]-->
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+		<!-- Fonts Loader from _fonts.css (HTML5 LocalStorage) -->
+		<script>!function(){function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))a(localStorage.font_css_cache);else{var n=new XMLHttpRequest;n.open("GET",o,!0),e(n,"load",function(){4===n.readyState&&(a(n.responseText),localStorage.font_css_cache=n.responseText,localStorage.font_css_cache_file=o)}),n.send()}else{var c=document.createElement("link");c.href=o,c.rel="stylesheet",c.type="text/css",document.getElementsByTagName("head")[0].appendChild(c),document.cookie="font_css_cache"}}function a(e){var t=document.createElement("style");t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="_fonts.css";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?n():e(window,"load",n)}();</script>
 
-	<script type="text/javascript" src="../vendors/scrolloverflow.js"></script>
+		<!-- Load CSS Compilled without JS -->
+		<noscript><link rel="stylesheet" href="style.min.css"></noscript>
 
-	<script type="text/javascript" src="../jquery.fullPage.js"></script>
-	
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				navigation: true,
-				css3: true,
-				navigationPosition: 'left',
-				navigationTooltips: false,
-				responsiveWidth: 768,				
-				scrollingSpeed: 1700,				
-				afterResponsive: function(isResponsive){
-					
-				}
-			});
-		});
-	</script>
+		<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 
-</head>
-<body>
 
-<div id="fullpage">
-	<div class="section fp-auto-height-responsive" id="section0">
-		<div class="intro">
-			<h1>Navigation dots</h1>
-			<p>An easy and beautiful way to navigate throw the sections</p>
+	</head>
+
+	<body>
+
+
+
+	<div class="remodal-bg">
+		<div class="loader">
+			<div class="loader_inner"></div>
 		</div>
-	</div>
-	<div class="section" id="section1">
+		<div id="fullpage">
+			<div class="section fp-auto-height-responsive" id="section0">
+				<div class="intro">
+					<h1>Navigation dots</h1>
+					<p>An easy and beautiful way to navigate throw the sections</p>
+				</div>
+			</div>
+			<div class="section" id="section1">
 
-	    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit beatae et ipsam obcaecati eos! Dicta aliquid ducimus, magni sint mollitia vero facilis pariatur! Saepe officiis quod cum, tempora dignissimos facilis. Aut tempore ullam illo iusto nihil, iure maiores ratione, harum possimus dicta repellat, eos numquam eligendi blanditiis voluptas quibusdam, omnis error doloribus! Minima ratione, impedit modi soluta, dolores qui, tenetur perspiciatis laborum numquam in adipisci minus aliquam tempore quaerat obcaecati nihil molestiae deserunt nisi expedita dolorem culpa. Quos minima aspernatur alias aliquid, facere dicta perspiciatis libero nisi non magni? Vel, nobis, necessitatibus aliquam consequatur a suscipit modi laudantium temporibus tempora!</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit beatae et ipsam obcaecati eos! Dicta aliquid ducimus, magni sint mollitia vero facilis pariatur! Saepe officiis quod cum, tempora dignissimos facilis. Aut tempore ullam illo iusto nihil, iure maiores ratione, harum possimus dicta repellat, eos numquam eligendi blanditiis voluptas quibusdam, omnis error doloribus! Minima ratione, impedit modi soluta, dolores qui, tenetur perspiciatis laborum numquam in adipisci minus aliquam tempore quaerat obcaecati nihil molestiae deserunt nisi expedita dolorem culpa. Quos minima aspernatur alias aliquid, facere dicta perspiciatis libero nisi non magni? Vel, nobis, necessitatibus aliquam consequatur a suscipit modi laudantium temporibus tempora!</p>
 
-	</div>
-	<div class="section" id="section2">
-		<div class="intro">
-			<h1>Enjoy it</h1>
+			</div>
+			<div class="section" id="section2">
+				<div class="intro">
+					<h1>Enjoy it</h1>
+				</div>
+			</div>
+			<div class="section" id="section3">
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum suscipit quibusdam fuga, excepturi rem, iste assumenda. Est ipsam voluptate facilis ut quam assumenda voluptates, dolore, alias magnam suscipit tempora corporis quidem, aperiam culpa ad. Molestiae aperiam vel cupiditate odit veritatis reprehenderit, iste animi velit, ratione dolorem incidunt repellendus fuga officia, libero iusto aspernatur, quidem vitae dignissimos error minus eius nihil quia. Commodi fugit, esse quibusdam rem molestiae, dolorem consequuntur inventore ut assumenda, accusantium dolore. Iusto maiores incidunt praesentium, sapiente consectetur aperiam, quis totam! Laboriosam doloremque saepe molestias debitis voluptatibus, fugit voluptates esse dolorum, commodi magnam quibusdam recusandae rerum ut sunt.</p>
+			</div>
+			<div class="section" id="section4">
+				<div class="intro">
+					<h1>Responsive auto-height</h1>
+					<p>On responsive mode, which will fire with less than 900px width as defined in `responsiveWidth`, this section will become bigger than the viewport as I'm using the class `fp-auto-height-responsive` on the section.</p>
+					<br>
+					<br>
+					<br>
+					<p>
+						Eu nec ferri molestie consequat, vel at alia dolore putant. Labore philosophia ut vix. In vis nostrud interesset appellantur, vis et tation feugiat scripserit. Te nec noster suavitate persecuti. Diceret erroribus cu vix, alii omnes ei sit. Sea an corrumpit patrioque, virtute accumsan nominavi et usu, ex mei dolore vocibus incorrupte. Duo ea saperet tacimates. Sed possim prodesset no, per novum putent doctus ea. Eu mea magna aliquip graecis, pri corpora officiis complectitur ei, lorem saepe consetetur his ad. Meis consulatu ei vis, an altera ocurreret interesset qui. Eu ponderum comprehensam his, case antiopam pri te. Mel ne partem consequat instructior. Ad dicunt malorum sea, ex qui omnes invenire gubergren. Ius cu autem aliquando, pri vide ornatus perpetua an, no has epicuri 
+
+
+					</p>
+				</div>
+			</div>
+			<div class="section" id="section5">
+				<div class="intro">
+					<h1>Keep it simple!</h1>
+				</div>		
+			</div>
+			<div class="section" id="section6">
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum suscipit quibusdam fuga, excepturi rem, iste assumenda. Est ipsam voluptate facilis ut quam assumenda voluptates, dolore, alias magnam suscipit tempora corporis quidem, aperiam culpa ad. Molestiae aperiam vel cupiditate odit veritatis reprehenderit, iste animi velit, ratione dolorem incidunt repellendus fuga officia, libero iusto aspernatur, quidem vitae dignissimos error minus eius nihil quia. Commodi fugit, esse quibusdam rem molestiae, dolorem consequuntur inventore ut assumenda, accusantium dolore. Iusto maiores incidunt praesentium, sapiente consectetur aperiam, quis totam! Laboriosam doloremque saepe molestias debitis voluptatibus, fugit voluptates esse dolorum, commodi magnam quibusdam recusandae rerum ut sunt.</p>
+			</div>	
+			<div class="section" id="section7">
+				<div class="intro">
+
+				</div>
+			</div>
+			<div id="footer">
+				<div class="main-footer">
+					<ul>
+						<li>
+							<p>г. Санкт-Петербург, наб. реки Фонтанки, 54, оф. 76</p>
+						</li>
+						<li>
+							<a href="#"><img src="img/vk-2.svg" alt="vk-2"></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/fb-2.svg" alt="fb"></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/insta-2.svg" alt="insta"></a>
+						</li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
 		</div>
-	</div>
-	<div class="section" id="section3">
-
-	    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum suscipit quibusdam fuga, excepturi rem, iste assumenda. Est ipsam voluptate facilis ut quam assumenda voluptates, dolore, alias magnam suscipit tempora corporis quidem, aperiam culpa ad. Molestiae aperiam vel cupiditate odit veritatis reprehenderit, iste animi velit, ratione dolorem incidunt repellendus fuga officia, libero iusto aspernatur, quidem vitae dignissimos error minus eius nihil quia. Commodi fugit, esse quibusdam rem molestiae, dolorem consequuntur inventore ut assumenda, accusantium dolore. Iusto maiores incidunt praesentium, sapiente consectetur aperiam, quis totam! Laboriosam doloremque saepe molestias debitis voluptatibus, fugit voluptates esse dolorum, commodi magnam quibusdam recusandae rerum ut sunt.</p>
-	</div>
-	<div class="section" id="section4">
-		<div class="intro">
-			<h1>Responsive auto-height</h1>
-			<p>On responsive mode, which will fire with less than 900px width as defined in `responsiveWidth`, this section will become bigger than the viewport as I'm using the class `fp-auto-height-responsive` on the section.</p>
-			<br>
-			<br>
-			<br>
-			<p>
-			Eu nec ferri molestie consequat, vel at alia dolore putant. Labore philosophia ut vix. In vis nostrud interesset appellantur, vis et tation feugiat scripserit. Te nec noster suavitate persecuti. Diceret erroribus cu vix, alii omnes ei sit. Sea an corrumpit patrioque, virtute accumsan nominavi et usu, ex mei dolore vocibus incorrupte. Duo ea saperet tacimates. Sed possim prodesset no, per novum putent doctus ea. Eu mea magna aliquip graecis, pri corpora officiis complectitur ei, lorem saepe consetetur his ad. Meis consulatu ei vis, an altera ocurreret interesset qui. Eu ponderum comprehensam his, case antiopam pri te. Mel ne partem consequat instructior. Ad dicunt malorum sea, ex qui omnes invenire gubergren. Ius cu autem aliquando, pri vide ornatus perpetua an, no has epicuri 
-
-
-			</p>
-		</div>
-	</div>
-	<div class="section" id="section5">
-		<div class="intro">
-			<h1>Keep it simple!</h1>
-		</div>		
-	</div>
-	<div class="section" id="section6">
-
-	    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum suscipit quibusdam fuga, excepturi rem, iste assumenda. Est ipsam voluptate facilis ut quam assumenda voluptates, dolore, alias magnam suscipit tempora corporis quidem, aperiam culpa ad. Molestiae aperiam vel cupiditate odit veritatis reprehenderit, iste animi velit, ratione dolorem incidunt repellendus fuga officia, libero iusto aspernatur, quidem vitae dignissimos error minus eius nihil quia. Commodi fugit, esse quibusdam rem molestiae, dolorem consequuntur inventore ut assumenda, accusantium dolore. Iusto maiores incidunt praesentium, sapiente consectetur aperiam, quis totam! Laboriosam doloremque saepe molestias debitis voluptatibus, fugit voluptates esse dolorum, commodi magnam quibusdam recusandae rerum ut sunt.</p>
 	</div>	
-	<div class="section" id="section7">
-		<div class="intro">
-			
+	<!-- Модальное окно -->
+	<div class="remodal" data-remodal-id="modal" role="dialog">
+		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+		<div>
+			<h2>Заполните форму</h2>
+			<p>и наш специалист свяжется с Вами в течение 15 минут</p>
+			<form action="form-control/mail.php" method="post" class="main-form" id="modal-form" name="main-form">
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="vilar-agro">
+				<input type="hidden" name="admin_email" value="vilaragro@gmail.com">
+				<input type="hidden" name="form_subject" value="Заявка с сайта «Вилар-Агро»">
+				<!-- END Hidden Required Fields -->
+				<div class="input-group">
+					<input type="text"  name="name" placeholder="Ваше имя" required>
+				</div>
+				<div class="input-group">
+					<input type="email"  name="email" placeholder="Ваш e-mail" required>
+				</div>
+				<div class="input-group">
+					<input class="phone" type="text"  name="phone" placeholder="Ваш телефон" required>
+				</div>
+				<input type="hidden"  name="s_formi" value="Получить консультацию">
+				<button type="submit" name="submit" class="btn btn-blue modal-btn">Получить консультацию</button>
+			</form>
 		</div>
-		<div id="footer">
-			<div class="main-footer">
-				<ul>
-					<li>
-						<p>г. Санкт-Петербург, наб. реки Фонтанки, 54, оф. 76</p>
-					</li>
-					<li>
-						<a href="#"><img src="imgs/vk-2.svg" alt="vk-2"></a>
-					</li>
-					<li>
-						<a href="#"><img src="imgs/fb-2.svg" alt="fb"></a>
-					</li>
-					<li>
-						<a href="#"><img src="imgs/insta-2.svg" alt="insta"></a>
-					</li>
-					<li></li>
-				</ul>
+		<br>
+	</div>
+	<!-- Конец Модальное окно  -->
+	<!--  модальное окно политика конфиденциальности -->
+	<div class="remodal policy-conf" data-remodal-id="modal-2" role="dialog">
+		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+		<div id="policy" class="mfp-hide white-popup-block">
+			<div class="policy-confidential">
+				<h1>ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</h1>
+				<p>Ваша конфиденциальность очень важна для нас. Мы хотим, чтобы Ваша работа в Интернет по возможности была максимально приятной и полезной, и Вы совершенно спокойно использовали широчайший спектр информации, инструментов и возможностей, которые предлагает Интернет.</p>
+				<p>Личная информация Членов, собранная при регистрации (или в любое другое время) преимущественно используется для подготовки Продуктов или Услуг в соответствии с Вашими потребностями. Ваша информация не будет передана или продана третьим сторонам. Однако мы можем частично раскрывать личную информацию в особых случаях, описанных в "Согласии с рассылкой"</p>
+				<h2>Какие данные собираются на сайте</h2>
+				<p>При добровольной регистрации Вы отправляете свое Имя, телефон и E-mail через форму регистрации.</p>
+				<h2>С какой целью собираются эти данные</h2>
+				<p>Имя используется для обращения лично к Вам, а ваш e-mail и телефон для отправки Вам писем рассылок, новостей, полезных материалов, коммерческих предложений.</p>
+				<p>Ваши имя, телефон и e-mail не передаются третьим лицам, ни при каких условиях кроме случаев, связанных с исполнением требований законодательства. Ваше имя, телефон и e-mail на защищенных серверах сервиса getresponse.com и используются в соответствии с его политикой конфиденциальности.</p>
+				<p>Вы можете отказаться от получения писем рассылки и удалить из базы данных свои контактные данные в любой момент, кликнув на ссылку для отписки, присутствующую в каждом письме.</p>
+				<h2>Как эти данные используются</h2>
+				<p>На сайте www.hodi.com.ua используются куки (Cookies) и данные о посетителях сервиса Google Analytics.</p>
+				<p>При помощи этих данных собирается информация о действиях посетителей на сайте с целью улучшения его содержания, улучшения функциональных возможностей сайта и, как следствие, создания качественного контента и сервисов для посетителей.</p>
+				<p>Вы можете в любой момент изменить настройки своего браузера так, чтобы браузер блокировал все файлы cookie или оповещал об отправке этих файлов. Учтите при этом, что некоторые функции и сервисы не смогут работать должным образом.</p>
+				<h2>Как эти данные защищаются</h2>
+				<p>Для защиты Вашей личной информации мы используем разнообразные административные, управленческие и технические меры безопасности. Наша Компания придерживается различных международных стандартов контроля, направленных на операции с личной информацией, которые включают определенные меры контроля по защите информации, собранной в Интернет.</p>
+				<p>Наших сотрудников обучают понимать и выполнять эти меры контроля, они ознакомлены с нашим Уведомлением о конфиденциальности, нормами и инструкциями. Тем не менее, несмотря на то, что мы стремимся обезопасить Вашу личную информацию, Вы тоже должны принимать меры, чтобы защитить ее.</p>
+				<p>Мы настоятельно рекомендуем Вам принимать все возможные меры предосторожности во время пребывания в Интернете. Организованные нами услуги и веб-сайты предусматривают меры по защите от утечки, несанкционированного использования и изменения информации, которую мы контролируем. Несмотря на то, что мы делаем все возможное, чтобы обеспечить целостность и безопасность своей сети и систем, мы не можем гарантировать, что наши меры безопасности предотвратят незаконный доступ к этой информации хакеров сторонних организаций.</p>
+				<p>В случае изменения данной политики конфиденциальности Вы сможете прочитать об этих изменениях на этой странице или, в особых случаях, получить уведомление на свой e-mail.</p>
+				<p>Для связи с администратором сайта по любым вопросам Вы можете написать письмо на e-mail: hodi.legko@gmail.com</p>
 			</div>
 		</div>
 	</div>
-</div>
+	<!-- /форма модальное окно политика конфиденциальности-->
+
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+
+<!--[if lt IE 9]>
+<script src="libs/html5shiv/es5-shim.min.js"></script>
+<script src="libs/html5shiv/html5shiv.min.js"></script>
+<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+
+<!-- Load CSS -->
+<script>
+	function loadCSS(hf) {
+		var ms=document.createElement("link");ms.rel="stylesheet";
+		ms.href=hf;document.getElementsByTagName("head")[0].appendChild(ms);
+	}
+	loadCSS("_fonts.css"); //Load Libs CSS: Animate CSS
+	loadCSS("libs/owlcarousel/owl.carousel.min.css"); //Load Libs CSS: OwlCarousel CSS
+	loadCSS("libs/owlcarousel/owl.theme.default.min.css"); //Load Libs CSS: OwlCarousel CSS
+	loadCSS("libs/animate/animate.css"); //Load Libs CSS: Animate CSS
+	loadCSS("libs/fullPage/jquery.fullPage.css"); //Load Libs CSS: fullPage CSS
+	loadCSS("libs/remodal/remodal.css"); //Load Libs CSS: Remodal CSS
+	loadCSS("libs/remodal/remodal-default-theme.css"); //Load Libs CSS: Remodal CSS
+	loadCSS("header-css/_header.css");   //Header Styles (compress & paste to header after release)
+	loadCSS("css/style.css");            //User Styles: Main
+	loadCSS("css/_media.css");           //User Styles: Media
+</script>
+
+<!-- Load CSS compiled without Bootstrap & Header styles (after release) -->
+<script>var ms=document.createElement("link");ms.rel="stylesheet";
+// ms.href="style.min.css";document.getElementsByTagName("head")[0].appendChild(ms);
+</script>
+
+
+
+<!-- Load Scripts -->
+<script>var scr = {"scripts":[
+	{"src" : "libs/modernizr/modernizr.js", "async" : false},
+	{"src" : "libs/animate/wow.js", "async" : false},
+	{"src" : "libs/plugins-scroll/plugins-scroll.js", "async" : false},
+	{"src" : "libs/owlcarousel/owl.carousel.min.js", "async" : false},
+	{"src" : "libs/vendors/scrolloverflow.min.js", "async" : false},
+	{"src" : "libs/fullPage/jquery.fullPage.min.js", "async" : false},
+	{"src" : "libs/remodal/remodal.min.js", "async" : false},
+	{"src" : "libs/validate/jquery.validate.min.js", "async" : false},
+	{"src" : "libs/validate/messages_ru.min.js", "async" : false},
+	{"src" : "js/common.js", "async" : false}
+	]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+</script>
+<script>
+	$(window).load(function() {
+
+		$("#wrapper").fadeOut();
+		$(".loader").delay(400).fadeOut("slow");
+
+	});
+</script>
+
+
 
 
 </body>
