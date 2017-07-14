@@ -1,45 +1,100 @@
 #section0 {	
 	width: 100%;
+	position: relative;
 	background: url(../img/bg1.jpg);
 	-webkit-background-size: cover;
 	background-size: cover;
+	img {
+		width: 100%;
+	}
 }
+.logo-top-wrap {
+	width: 110px;
+	height: 110px;	
+	background: @white;
+	padding-top: 30px;
+}
+.logo-top {
+	width: 60px;
+	margin: 0 auto;
+}
+.social-wrap {
+	width: 190px;
+	text-align: center;
+	position: absolute;
+	top: 30px;
+	right: 40px;
+	ul {
+		padding: 0;
+		margin: 0;
+		li {
+			list-style-type: none;
+			display: inline-block;
+			vertical-align: top;
+			margin-right: 10px;
+			&:last-child {
+				margin-right: 0;
+			}			
+		}
+	}
+	p {
+		font-size: 1rem;
+		color: @white;
+	}
+}
+.social-link {
+	width: 48px;
+	height: 48px;
+	border-radius: 7px;
+	border: 1px solid @white;
+	margin-bottom: 5px;
+	a {
+		width: 48px;
+		height: 48px;
+		color: #000;
+		margin-bottom: 0;
+	}
+}
+.general-logo {
+	max-width: 420px;	
+}
+
 .controlArrow.prev {
-		left: 50px;
-	}
-	.controlArrow.next{
-		right: 50px;
-	}
-	#fp-nav {
-		top: 50%;
-	}
-	#fp-nav ul li, 
-	.fp-slidesNav ul li {
-		margin-bottom: 25px;
-		margin-left: 25px;
-	}
-	#fp-nav ul li a span, 
-	.fp-slidesNav ul li a span {
-		width: 14px;
-		height: 14px;
-		background: transparent;
-		border: 1px solid #e72473;
-	}
-	#fp-nav ul li:hover a span, 
-	.fp-slidesNav ul li:hover a span {
-		width: 14px;
-		height: 14px;
-		background: #e72473;
-		border: 1px solid #e72473;
-		margin: -2px 0 0 -2px;
-	}
-	#fp-nav ul li a.active span, 
-	.fp-slidesNav ul li a.active span, 
-	#fp-nav ul li:hover a.active span, 
-	.fp-slidesNav ul li:hover a.active span {
-		width: 14px;
-		height: 14px;
-		background: #e72473;
-		border: 1px solid #e72473;
-		margin: -2px 0 0 -2px;
-	}
+	left: 50px;
+}
+.controlArrow.next{
+	right: 50px;
+}
+#fp-nav {
+	top: 50%;
+}
+#fp-nav ul li, 
+.fp-slidesNav ul li {
+	margin-bottom: 25px;
+	margin-left: 25px;
+}
+#fp-nav ul li a span, 
+.fp-slidesNav ul li a span {
+	width: 14px;
+	height: 14px;
+	background: transparent;
+	border: 1px solid #e72473;
+}
+#fp-nav ul li:hover a span, 
+.fp-slidesNav ul li:hover a span {
+	width: 14px;
+	height: 14px;
+	background: #e72473;
+	border: 1px solid #e72473;
+	margin: -2px 0 0 -2px;
+}
+#fp-nav ul li a.active span, 
+.fp-slidesNav ul li a.active span, 
+#fp-nav ul li:hover a.active span, 
+.fp-slidesNav ul li:hover a.active span {
+	width: 14px;
+	height: 14px;
+	background: #e72473;
+	border: 1px solid #e72473;
+	margin: -2px 0 0 -2px;
+}

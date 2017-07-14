@@ -427,6 +427,9 @@ a {
   line-height: 1.3;
   color: #000000;
   margin: 0 0 1rem;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 a:hover {
   text-decoration: underline;
@@ -568,8 +571,63 @@ label.error {
 }
 #section0 {
   width: 100%;
+  position: relative;
   background: url(../img/bg1.jpg);
   background-size: cover;
+}
+#section0 img {
+  width: 100%;
+}
+.logo-top-wrap {
+  width: 110px;
+  height: 110px;
+  background: #fff;
+  padding-top: 30px;
+}
+.logo-top {
+  width: 60px;
+  margin: 0 auto;
+}
+.social-wrap {
+  width: 190px;
+  text-align: center;
+  position: absolute;
+  top: 30px;
+  right: 40px;
+}
+.social-wrap ul {
+  padding: 0;
+  margin: 0;
+}
+.social-wrap ul li {
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+}
+.social-wrap ul li:last-child {
+  margin-right: 0;
+}
+.social-wrap p {
+  font-size: 1rem;
+  color: #fff;
+}
+.social-link {
+  width: 48px;
+  height: 48px;
+  -webkit-border-radius: 7px;
+          border-radius: 7px;
+  border: 1px solid #fff;
+  margin-bottom: 5px;
+}
+.social-link a {
+  width: 48px;
+  height: 48px;
+  color: #000;
+  margin-bottom: 0;
+}
+.general-logo {
+  max-width: 420px;
 }
 .controlArrow.prev {
   left: 50px;
