@@ -807,9 +807,6 @@ label.error {
           border-radius: 30px;
   padding-top: 15px;
 }
-#section3 img {
-  width: 100%;
-}
 #section4 {
   background: url(../img/bg5.jpg);
   background-size: cover;
@@ -947,10 +944,5 @@ label.error {
   color: #000000;
 }
 .footer-social-link a:hover {
-  color: #fff;
-}
-/* Bottom menu
-	* --------------------------------------- */
-#infoMenu li a {
   color: #fff;
 }
