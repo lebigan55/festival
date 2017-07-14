@@ -52,3 +52,16 @@ $("#contact-call-back").validate();
 $("#contact-order-call").validate();
 $("#contact-get-price").validate();
 
+$(document).ready(function() {
+    $('#fullpage').fullpage({
+        navigation: true,
+        css3: true,
+        navigationPosition: 'left',
+        navigationTooltips: false,
+        responsiveWidth: 768,               
+        scrollingSpeed: 1700,               
+        afterResponsive: function(isResponsive){
+            
+        }
+    });
+});

@@ -20,6 +20,161 @@
 		.loader{background:none repeat scroll 0 0 #fff;bottom:0;height:100%;left:0;position:fixed;right:0;top:0;width:100%;z-index:9999}.loader_inner{background-image:url("img/preloader.gif");background-size:cover;background-repeat:no-repeat;background-position:center center;background-color:#fff;height:60px;width:60px;margin-top:-30px;margin-left:-30px;left:50%;top:50%;position:absolute}
 	</style>
 
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+	}
+	.intro p{
+		color: #fff;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		max-width: 100%;
+		height: auto;
+		text-align:center;
+		margin-left: 110px;
+	}
+	#section0 {	
+		width: 100%;
+		background: url(img/bg1.jpg);
+		-webkit-background-size: contain;
+		background-size: contain;
+	}
+	#section1 {
+		width: 100%;
+		background: url(img/bg2.jpg);
+		-webkit-background-size: contain;
+		background-size: contain;
+	}
+	#section2 {
+		background: url(img/bg3.jpg);
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	#section3 {
+		background: url(img/bg4.jpg);
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	#section4 {
+		background: url(img/bg5.jpg);
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	#section5 {
+		background: url(img/bg6.jpg);
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	#section6 {
+		background: #fff;		
+	}
+	#section7 {
+		background: url(img/bg8.jpg);
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	
+	/* Overwriting styles for control arrows for slides
+	* --------------------------------------- */
+	.controlArrow.prev {
+		left: 50px;
+	}
+	.controlArrow.next{
+		right: 50px;
+	}
+	#fp-nav {
+		top: 50%;
+	}
+	#fp-nav ul li, 
+	.fp-slidesNav ul li {
+		margin-bottom: 25px;
+		margin-left: 25px;
+	}
+	#fp-nav ul li a span, 
+	.fp-slidesNav ul li a span {
+		width: 14px;
+		height: 14px;
+		background: transparent;
+		border: 1px solid #e72473;
+	}
+	#fp-nav ul li:hover a span, 
+	.fp-slidesNav ul li:hover a span {
+		width: 14px;
+		height: 14px;
+		background: #e72473;
+		border: 1px solid #e72473;
+		margin: -2px 0 0 -2px;
+	}
+	#fp-nav ul li a.active span, 
+	.fp-slidesNav ul li a.active span, 
+	#fp-nav ul li:hover a.active span, 
+	.fp-slidesNav ul li:hover a.active span {
+		width: 14px;
+		height: 14px;
+		background: #e72473;
+		border: 1px solid #e72473;
+		margin: -2px 0 0 -2px;
+	}
+	#footer{
+		position: absolute;
+		-ms-text-align-last: auto;
+		text-align: left;
+		height: 150px;
+		display:block;
+		width: 100%;
+		background: #f9d2c3;
+		z-index:9;		
+		color: #1d1d1b;
+		padding: 0;
+		bottom:0px;
+	}
+	.main-footer ul {
+		padding: 0;
+		margin: 0;
+	}
+	.main-footer ul li {
+		list-style-type: none;
+		display: inline-block;
+		vertical-align: middle;
+		width: 30px;
+		height: 30px;
+		padding-top: 30px;
+	}
+	.main-footer ul li:first-child {
+		max-width: 400px;
+		width: 100%;
+		margin-left: 165px;
+	}
+	.main-footer ul li a {
+		width: 30px;
+		height: 30px;
+		overflow: hidden;
+	}
+	.main-footer ul li a img {
+		max-width: 100%;
+	}
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
 	<!-- Fonts Loader from _fonts.css (HTML5 LocalStorage) -->
 	<script>!function(){function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))a(localStorage.font_css_cache);else{var n=new XMLHttpRequest;n.open("GET",o,!0),e(n,"load",function(){4===n.readyState&&(a(n.responseText),localStorage.font_css_cache=n.responseText,localStorage.font_css_cache_file=o)}),n.send()}else{var c=document.createElement("link");c.href=o,c.rel="stylesheet",c.type="text/css",document.getElementsByTagName("head")[0].appendChild(c),document.cookie="font_css_cache"}}function a(e){var t=document.createElement("style");t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="_fonts.css";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?n():e(window,"load",n)}();</script>
 	
@@ -38,9 +193,79 @@
 </head>
 
 <body>
+
 	<div class="loader">
 		<div class="loader_inner"></div>
 	</div>
+	<div id="fullpage">
+	<div class="section fp-auto-height-responsive" id="section0">
+		<div class="intro">
+			<h1>Navigation dots</h1>
+			<p>An easy and beautiful way to navigate throw the sections</p>
+		</div>
+	</div>
+	<div class="section" id="section1">
+
+	    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit beatae et ipsam obcaecati eos! Dicta aliquid ducimus, magni sint mollitia vero facilis pariatur! Saepe officiis quod cum, tempora dignissimos facilis. Aut tempore ullam illo iusto nihil, iure maiores ratione, harum possimus dicta repellat, eos numquam eligendi blanditiis voluptas quibusdam, omnis error doloribus! Minima ratione, impedit modi soluta, dolores qui, tenetur perspiciatis laborum numquam in adipisci minus aliquam tempore quaerat obcaecati nihil molestiae deserunt nisi expedita dolorem culpa. Quos minima aspernatur alias aliquid, facere dicta perspiciatis libero nisi non magni? Vel, nobis, necessitatibus aliquam consequatur a suscipit modi laudantium temporibus tempora!</p>
+
+	</div>
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1>Enjoy it</h1>
+		</div>
+	</div>
+	<div class="section" id="section3">
+
+	    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum suscipit quibusdam fuga, excepturi rem, iste assumenda. Est ipsam voluptate facilis ut quam assumenda voluptates, dolore, alias magnam suscipit tempora corporis quidem, aperiam culpa ad. Molestiae aperiam vel cupiditate odit veritatis reprehenderit, iste animi velit, ratione dolorem incidunt repellendus fuga officia, libero iusto aspernatur, quidem vitae dignissimos error minus eius nihil quia. Commodi fugit, esse quibusdam rem molestiae, dolorem consequuntur inventore ut assumenda, accusantium dolore. Iusto maiores incidunt praesentium, sapiente consectetur aperiam, quis totam! Laboriosam doloremque saepe molestias debitis voluptatibus, fugit voluptates esse dolorum, commodi magnam quibusdam recusandae rerum ut sunt.</p>
+	</div>
+	<div class="section" id="section4">
+		<div class="intro">
+			<h1>Responsive auto-height</h1>
+			<p>On responsive mode, which will fire with less than 900px width as defined in `responsiveWidth`, this section will become bigger than the viewport as I'm using the class `fp-auto-height-responsive` on the section.</p>
+			<br>
+			<br>
+			<br>
+			<p>
+			Eu nec ferri molestie consequat, vel at alia dolore putant. Labore philosophia ut vix. In vis nostrud interesset appellantur, vis et tation feugiat scripserit. Te nec noster suavitate persecuti. Diceret erroribus cu vix, alii omnes ei sit. Sea an corrumpit patrioque, virtute accumsan nominavi et usu, ex mei dolore vocibus incorrupte. Duo ea saperet tacimates. Sed possim prodesset no, per novum putent doctus ea. Eu mea magna aliquip graecis, pri corpora officiis complectitur ei, lorem saepe consetetur his ad. Meis consulatu ei vis, an altera ocurreret interesset qui. Eu ponderum comprehensam his, case antiopam pri te. Mel ne partem consequat instructior. Ad dicunt malorum sea, ex qui omnes invenire gubergren. Ius cu autem aliquando, pri vide ornatus perpetua an, no has epicuri 
+
+
+			</p>
+		</div>
+	</div>
+	<div class="section" id="section5">
+		<div class="intro">
+			<h1>Keep it simple!</h1>
+		</div>		
+	</div>
+	<div class="section" id="section6">
+
+	    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum suscipit quibusdam fuga, excepturi rem, iste assumenda. Est ipsam voluptate facilis ut quam assumenda voluptates, dolore, alias magnam suscipit tempora corporis quidem, aperiam culpa ad. Molestiae aperiam vel cupiditate odit veritatis reprehenderit, iste animi velit, ratione dolorem incidunt repellendus fuga officia, libero iusto aspernatur, quidem vitae dignissimos error minus eius nihil quia. Commodi fugit, esse quibusdam rem molestiae, dolorem consequuntur inventore ut assumenda, accusantium dolore. Iusto maiores incidunt praesentium, sapiente consectetur aperiam, quis totam! Laboriosam doloremque saepe molestias debitis voluptatibus, fugit voluptates esse dolorum, commodi magnam quibusdam recusandae rerum ut sunt.</p>
+	</div>	
+	<div class="section" id="section7">
+		<div class="intro">
+			
+		</div>
+		<div id="footer">
+			<div class="main-footer">
+				<ul>
+					<li>
+						<p>г. Санкт-Петербург, наб. реки Фонтанки, 54, оф. 76</p>
+					</li>
+					<li>
+						<a href="#"><img src="img/vk-2.svg" alt="vk-2"></a>
+					</li>
+					<li>
+						<a href="#"><img src="img/fb-2.svg" alt="fb"></a>
+					</li>
+					<li>
+						<a href="#"><img src="img/insta-2.svg" alt="insta"></a>
+					</li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
 	<div class="remodal-bg">
 		<header class="main-header">
 			<div class="container clearfix">
@@ -245,37 +470,6 @@
 
 
 
-<script type="text/javascript">
-	function initMap() {
-		var myLatLng = {lat: 48.458073, lng: 35.023564};
 
-		var map = new google.maps.Map(document.getElementById('map'), {
-			zoom: 13,
-			center: myLatLng,
-			scrollwheel: false,
-			disableDefaultUI: false,
-
-			styles: [{"featureType":"water","stylers":[{"color":"#19a0d8"}]},{"featureType":"administrative","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"},{"weight":6}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#e85113"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#efe9e4"},{"lightness":-40}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#efe9e4"},{"lightness":-20}]},{"featureType":"road","elementType":"labels.text.stroke","stylers":[{"lightness":100}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"lightness":-100}]},{"featureType":"road.highway","elementType":"labels.icon"},{"featureType":"landscape","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"landscape","stylers":[{"lightness":20},{"color":"#efe9e4"}]},{"featureType":"landscape.man_made","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels.text.stroke","stylers":[{"lightness":100}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"lightness":-100}]},{"featureType":"poi","elementType":"labels.text.fill","stylers":[{"hue":"#11ff00"}]},{"featureType":"poi","elementType":"labels.text.stroke","stylers":[{"lightness":100}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"hue":"#4cff00"},{"saturation":58}]},{"featureType":"poi","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#f0e4d3"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#efe9e4"},{"lightness":-25}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#efe9e4"},{"lightness":-10}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"simplified"}]}]
-		});
-
-
-		var image = 'img/map-pointer.png';
-		var beachMarker = new google.maps.Marker({
-			position: {lat: 48.458473, lng: 35.035564},
-			map: map,
-			icon: image,
-			animation: google.maps.Animation.DROP
-		});
-
-
-	};
-</script>
-
-<script type="text/javascript">
-	day = 1; hour= 2; minute= 55; sec= 56;
-	function CountBox(a){dateNow=new Date,amount=dateFuture-dateNow.getTime()+5,delete dateNow,amount<0?(out="<div class='countbox-num'><div id='countbox-days1'><span></span>0</div><div id='countbox-days2'><span></span>0</div><div id='countbox-days-text'></div></div><div class='countbox-space'></div><div class='countbox-num'><div id='countbox-hours1'><span></span>0</div><div id='countbox-hours2'><span></span>0</div><div id='countbox-hours-text'></div></div><div class='countbox-space'></div><div class='countbox-num'><div id='countbox-mins1'><span></span>0</div><div id='countbox-mins2'><span></span>0</div><div id='countbox-mins-text'></div></div><div class='countbox-space'></div><div class='countbox-num  countbox-num__sec'><div id='countbox-secs1'><span></span>0</div><div id='countbox-secs2'><span></span>0</div><div id='countbox-secs-text'></div></div>",document.getElementById(a).innerHTML=out):(days=0,days1=0,days2=0,hours=0,hours1=0,hours2=0,mins=0,mins1=0,mins2=0,secs=0,secs1=0,secs2=0,out="",amount=Math.floor(amount/1e3),days=Math.floor(amount/86400),days1=days>=10?days.toString().charAt(0):"0",days2=days>=10?days.toString().charAt(1):days.toString().charAt(0),amount%=86400,hours=Math.floor(amount/3600),hours1=hours>=10?hours.toString().charAt(0):"0",hours2=hours>=10?hours.toString().charAt(1):hours.toString().charAt(0),amount%=3600,mins=Math.floor(amount/60),mins1=mins>=10?mins.toString().charAt(0):"0",mins2=mins>=10?mins.toString().charAt(1):mins.toString().charAt(0),amount%=60,secs=Math.floor(amount),secs1=secs>=10?secs.toString().charAt(0):"0",secs2=secs>=10?secs.toString().charAt(1):secs.toString().charAt(0),out="<div class='countbox-num'><div id='countbox-days1'><span></span>"+days1+"</div><div id='countbox-days2'><span></span>"+days2+"</div><div id='countbox-days-text'></div></div><div class='countbox-space'></div><div class='countbox-num'><div id='countbox-hours1'><span></span>"+hours1+"</div><div id='countbox-hours2'><span></span>"+hours2+"</div><div id='countbox-hours-text'></div></div><div class='countbox-space'></div><div class='countbox-num'><div id='countbox-mins1'><span></span>"+mins1+"</div><div id='countbox-mins2'><span></span>"+mins2+"</div><div id='countbox-mins-text'></div></div><div class='countbox-space'></div><div class='countbox-num  countbox-num__sec'><div id='countbox-secs1'><span></span>"+secs1+"</div><div id='countbox-secs2'><span></span>"+secs2+"</div><div id='countbox-secs-text'></div></div>",document.getElementById(a).innerHTML=out,setTimeout(function(){CountBox(a)},1e3))}day=1,hour=2,minute=55,sec=56,dateFuture=(new Date).getTime()+1e3*(60*(24*day+hour)*60+60*minute+sec),window.onload=function(){CountBox("countbox"),CountBox("countbox1")};
-</script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQuA3wc-ZE2DtYyudxCJK0jZ2HGvsHOIM&callback=initMap"
-type="text/javascript"></script>
 </body>
 </html>
