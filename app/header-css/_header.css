@@ -50,3 +50,10 @@ body {
 	bottom: 75px;
 	left: -110px;
 }
+.logo-bottom-wrap-2 {
+	width: 110px;
+	height: 100px;
+	position: absolute;
+	bottom: 0;
+	left: -110px;
+}
