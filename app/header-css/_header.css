@@ -3,7 +3,7 @@ body {
 	min-width: 320px;
 	position: relative;
 	line-height: 1.3;	
-	overflow-x: hidden;
+	overflow-x: hidden;	
 }
 .hidden {
 	display: none;
@@ -41,5 +41,12 @@ body {
 }
 .fp-enabled body {
 	 padding-left: 110px;
-	 background: #000;
+	 background: #12171d;
+}
+.logo-bottom-wrap {
+	width: 110px;
+	height: 100px;
+	position: absolute;
+	bottom: 75px;
+	left: -110px;
 }
