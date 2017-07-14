@@ -23,7 +23,5 @@ h1{
 * --------------------------------------- */
 .section{
 	max-width: 100%;
-	height: auto;
-	text-align:center;
-	margin-left: 110px;
+	height: auto;	
 }
