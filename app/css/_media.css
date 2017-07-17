@@ -2,14 +2,50 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+	.main-footer-content ul li:last-child {
+		margin-left: 0;
+	}
+	#section4 .programm-inner-discription {
+		width: 17%;
+	}
+	.main-footer-content ul li {
+		margin: 0 75px 30px 0;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+	#section0 {
+		padding-bottom: 30px;
+	}
+	#section0,
+	#section2,
+	#section3,
+	#section7 {
+		background-position: top center !important;
+	}
+	#section6 {
+		padding-bottom: 30px;
+	}
+	#section1 .programm-inner-discription {
+		width: 20%;
+	}
+	#section5 .programm-inner-discription {
+		width: 22%;
+	}
+	.main-footer-content ul {
+		margin: 0 0 240px 0;
+	}
+	
 }
-
+@media only screen and (max-width : 770px) {
+	.section {
+		padding: 0 10px;
+	}
+	.row {
+		margin: 0;
+	}
+}
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 	
@@ -34,17 +70,108 @@
 		-ms-animation: none !important;
 		animation: none !important;
 	}
-
+	.fp-enabled body {
+		padding-left: 0;
+	}
+	.partners-wrap {
+		left: 0;
+	}
+	.footer-social-wrap {
+		right: 50px;
+	}	
+	#section1 .programm-inner-discription,
+	#section4 .programm-inner-discription,
+	#section5 .programm-inner-discription {
+	    width: 100%;	    
+	}
+	.programm-inner-discription {
+		margin-bottom: 20px;
+	}
+	#section1 .programm-inner-bottom ul,
+	#section5 .programm-inner-bottom ul {
+		max-width: 71%;
+		margin: 0 auto;
+	}	
+	.main-footer-content ul {
+		margin-bottom: 100px;
+	}
+	.pres-partners-inner ul {
+		width: 62%;
+		margin: 0 auto;
+	}
 }
 
 /* Custom, iPhone 6 Plus*/
 @media only screen and (max-width : 736px) {
-
+	#section1 .programm-inner-bottom ul,
+	#section5 .programm-inner-bottom ul {
+	    max-width: 66%;
+	    margin: 0 auto;
+	}
+	.pres-partners-inner,
+	.com-partners-inner {
+		text-align: center;
+	}
+	.footer-social-wrap {
+	    right: 36%;
+	}
+	.main-footer-content {
+		margin-top: 215px;
+	}
+	.main-footer-adress {
+		text-align: center;
+	}
+	.main-footer-content ul li {
+		margin-right: 70px;
+	}
+	#section7 {
+		padding: 0;
+	}
+	.partners-wrap {
+		position: relative;
+		margin-top: 500px;
+	}
 }
 
 /* Custom, iPhone 6 */
-@media only screen and (max-width : 667px) {
-
+@media only screen and (max-width : 668px) {
+	#section0 {
+		padding: 0;
+	}
+	.main-scr-overlay {
+		background: rgba(0,0,0,0.3);
+		padding-left: 15px;
+		padding-bottom: 30px;
+	}
+	.music-content-wrap p {
+		line-height: 1;
+	}
+	#section1 .programm-inner-bottom ul, 
+	#section5 .programm-inner-bottom ul {
+		width: 100%;
+		max-width: 100%;
+	}
+	#section1 .programm-inner-discription,
+	#section5 .programm-inner-discription {
+		width: 44%;
+	}
+	#section3 .programm-inner-bottom ul {
+		text-align: center;
+	}
+	.main-footer-content ul {
+		width: 70%;
+		margin: 0 auto;
+	}
+	.main-footer-content ul li {
+		margin-right: 30px;
+	}
+	.foote-register-wrap {
+		width: 80%;
+		margin: 0 auto;
+	}
+	.btn-footer-register {
+		width: 100%;
+	}
 }
 /* Custom, iPhone 5 */
 @media only screen and (max-width : 568px) {
@@ -53,32 +180,95 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-    
+    .social-wrap {
+    	right: 15px;
+    }
+    .programm-inner-discription:nth-child(even) {
+    	margin-right: 0;
+    }
+    .health-care-item--1 div {
+		position: relative;
+		width: 100%;
+		height: 70px;
+	}
+	.social-wrap.footer-social-wrap {
+		right: 50%;
+		margin-right: -95px;
+	}
+	.register-wrap .btn-register,
+	.btn-footer-register {
+		font-size: 2rem;
+		height: 60px;
+		line-height: 58px;
+	}
+}
+@media only screen and (max-width : 437px) {
+    #section4 .programm-inner-bottom ul li {
+    	width: 47%;
+		margin-right: 5px;
+    }
 }
 
 /* Custom, iPhone 6 Plus*/
-@media only screen and (max-width : 414px) {
-
+@media only screen and (max-width : 416px) {
+	.programm-inner-bottom ul {
+		text-align: center;
+	}
+	#section3 .programm-inner-discription {
+		max-width: 45%;
+	}
+	.programm-inner-content {
+		padding: 10px;
+	}
+	#section1 .programm-inner-discription, #section4 .programm-inner-discription, #section5 .programm-inner-discription,
+	#section1 .programm-inner-discription, #section5 .programm-inner-discription {
+	    width: 48%;
+	}
+	.programm-inner-bottom ul li {
+		margin-right: 5px;
+	}
+		
+	.programm-inner-content p {
+		font-size: 1.4rem;
+	}
+	.main-footer-content ul {
+		width: 58%;
+	}
+	.main-footer-content ul li {
+	    margin-right: 0;
+	}
+	.register-wrap .btn-register, .btn-footer-register {
+    	font-size: 1.6rem;
+	}
 }
 
 /* Custom, iPhone 6 */
 @media only screen and (max-width : 375px) {
-
+	.programm-point-wrap ul {
+	    padding: 6px 0 0 10px;
+	    margin: 0 auto;
+	}
+	.programm-point-wrap__pointer {
+		width: 16%;
+	}
+	.pin-wrap {
+	    width: 100%;
+	}
+	.programm-point-wrap ul li:last-child {
+	    margin-right: 0;
+	    width: 70%;
+	}
+	.programm-point-wrap li span {
+	    font-size: 2rem;
+	}
+	.programm-point-wrap li p {
+		font-size: 2rem;
+	}
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
-
-}
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
-
+	
 }
 
 
@@ -86,6 +276,20 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
+	.health-headline .health-mob {
+		display: block;
+	}
+	.health-headline .health-desk {
+		display: none;
+	}
+}
+@media only screen and (min-width : 350px) {
+	.health-headline .health-mob {
+		display: none;
+	}
+	.health-headline .health-desk {
+		display: block;
+	}
 
 }
 

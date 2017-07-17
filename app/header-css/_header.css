@@ -36,9 +36,6 @@ body {
 	 width: 60px;
 	 margin: 0 auto;
 }
-.fp-tableCell {
- 	display: block;
-}
 .fp-enabled body {
 	 padding-left: 110px;
 	 background: #12171d;
