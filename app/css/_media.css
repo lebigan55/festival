@@ -1,5 +1,39 @@
 /*==========  Desktop First Method  ==========*/
+@media only screen and (max-width : 1280px) {
+	.general-head {
+	    margin-bottom: 50px;
+	}
+	#section1 .programm-head-wrap .programm-head-headline,
+	.run-headline,
+	.sport-headline,
+	.health-headline {
+		padding-top: 10px;
+	}
+	#section1 .programm-inner-head .main-headline {
+		padding-top: 30px;
+		margin-bottom: 15px;
+	}
+	.run-dist {
+		margin-bottom: 190px;
+	}
+	.sport-headline {
+		margin-bottom: 230px;
+	}
+	.programm-point-wrap {
+		margin-bottom: 15px;
+	}
+	.health-headline {
+		margin-bottom: 0;
+	}
+	.health-care-item--1 {
+		max-height: 270px;
+		overflow: hidden;
+	}
+	.health-care-item--1 {
+		margin-bottom: 10px;
+	}
 
+}
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 	.main-footer-content ul li:last-child {
@@ -7,9 +41,12 @@
 	}
 	#section4 .programm-inner-discription {
 		width: 17%;
-	}
+	}	
 	.main-footer-content ul li {
 		margin: 0 75px 30px 0;
+	}
+	.programm-inner-discription {
+		margin-bottom: 20px;
 	}
 }
 
@@ -37,6 +74,21 @@
 		margin: 0 0 240px 0;
 	}
 	
+}
+@media only screen and (max-width : 800px) {
+	#section1 .programm-inner-discription,
+	#section4 .programm-inner-discription,
+	#section5 .programm-inner-discription {
+	    width: 100%;	    
+	}	
+	#section1 .programm-inner-bottom ul,
+	#section5 .programm-inner-bottom ul {
+		max-width: 72%;
+		margin: 0 auto;
+	}
+	.health-care-item--1 {
+		margin-bottom: 20px;
+	}
 }
 @media only screen and (max-width : 770px) {
 	.section {
@@ -79,19 +131,7 @@
 	.footer-social-wrap {
 		right: 50px;
 	}	
-	#section1 .programm-inner-discription,
-	#section4 .programm-inner-discription,
-	#section5 .programm-inner-discription {
-	    width: 100%;	    
-	}
-	.programm-inner-discription {
-		margin-bottom: 20px;
-	}
-	#section1 .programm-inner-bottom ul,
-	#section5 .programm-inner-bottom ul {
-		max-width: 71%;
-		margin: 0 auto;
-	}	
+		
 	.main-footer-content ul {
 		margin-bottom: 100px;
 	}
