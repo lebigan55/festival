@@ -581,7 +581,7 @@ label.error {
 #section0 {
   width: 100%;
   position: relative;
-  background: url(../img/bg1.jpg);
+  background: url(../img/bg1-1.jpg);
   background-size: cover;
 }
 .social-wrap {
@@ -963,8 +963,7 @@ label.error {
   margin-right: 30px;
 }
 .main-footer-content ul li:last-child {
-  margin-right: 0;
-  margin-left: 40px;
+  margin-right: 0;  
 }
 .main-footer-content p {
   font-size: 1.2rem;

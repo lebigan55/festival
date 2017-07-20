@@ -39,6 +39,7 @@
 	.main-footer-content ul li:last-child {
 		margin-left: 0;
 	}
+	#section1 .programm-inner-discription,
 	#section4 .programm-inner-discription {
 		width: 17%;
 	}	
@@ -63,10 +64,7 @@
 	}
 	#section6 {
 		padding-bottom: 30px;
-	}
-	#section1 .programm-inner-discription {
-		width: 20%;
-	}
+	}	
 	#section5 .programm-inner-discription {
 		width: 22%;
 	}
@@ -81,7 +79,6 @@
 	#section5 .programm-inner-discription {
 	    width: 100%;	    
 	}	
-	#section1 .programm-inner-bottom ul,
 	#section5 .programm-inner-bottom ul {
 		max-width: 72%;
 		margin: 0 auto;
@@ -139,19 +136,6 @@
 		width: 62%;
 		margin: 0 auto;
 	}
-}
-
-/* Custom, iPhone 6 Plus*/
-@media only screen and (max-width : 736px) {
-	#section1 .programm-inner-bottom ul,
-	#section5 .programm-inner-bottom ul {
-	    max-width: 66%;
-	    margin: 0 auto;
-	}
-	.pres-partners-inner,
-	.com-partners-inner {
-		text-align: center;
-	}
 	.footer-social-wrap {
 	    right: 36%;
 	}
@@ -162,8 +146,23 @@
 		text-align: center;
 	}
 	.main-footer-content ul li {
-		margin-right: 70px;
+		margin-right: 100px;
 	}
+	.main-footer-content ul li:last-child {
+		margin-left: -45px;
+	}
+}
+
+/* Custom, iPhone 6 Plus*/
+@media only screen and (max-width : 736px) {	
+	#section5 .programm-inner-bottom ul {
+	    max-width: 66%;
+	    margin: 0 auto;
+	}
+	.pres-partners-inner,
+	.com-partners-inner {
+		text-align: center;
+	}	
 	#section7 {
 		padding: 0;
 	}
@@ -185,13 +184,11 @@
 	}
 	.music-content-wrap p {
 		line-height: 1;
-	}
-	#section1 .programm-inner-bottom ul, 
+	}	 
 	#section5 .programm-inner-bottom ul {
 		width: 100%;
 		max-width: 100%;
-	}
-	#section1 .programm-inner-discription,
+	}	
 	#section5 .programm-inner-discription {
 		width: 44%;
 	}
@@ -199,11 +196,11 @@
 		text-align: center;
 	}
 	.main-footer-content ul {
-		width: 70%;
+		width: 85%;
 		margin: 0 auto;
 	}
 	.main-footer-content ul li {
-		margin-right: 30px;
+		margin-right: 95px;
 	}
 	.foote-register-wrap {
 		width: 80%;
@@ -215,7 +212,12 @@
 }
 /* Custom, iPhone 5 */
 @media only screen and (max-width : 568px) {
-
+	.main-footer-content ul {
+		width: 70%;
+	}
+	.main-footer-content ul li:last-child {
+		margin-left: 0;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -243,6 +245,7 @@
 	}
 }
 @media only screen and (max-width : 437px) {
+	#section1 .programm-inner-bottom ul li
     #section4 .programm-inner-bottom ul li {
     	width: 47%;
 		margin-right: 5px;
