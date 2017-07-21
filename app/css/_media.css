@@ -49,6 +49,10 @@
 	.programm-inner-discription {
 		margin-bottom: 20px;
 	}
+	.programm-inner-content	{
+		text-align: center;
+		padding: 10px 0;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -69,7 +73,7 @@
 		width: 22%;
 	}
 	.main-footer-content ul {
-		margin: 0 0 240px 0;
+		margin: 0 0 140px 0;
 	}
 	
 }
@@ -130,7 +134,7 @@
 	}	
 		
 	.main-footer-content ul {
-		margin-bottom: 100px;
+		margin-bottom: 50px;
 	}
 	.pres-partners-inner ul {
 		width: 62%;
@@ -211,7 +215,7 @@
 	}
 }
 /* Custom, iPhone 5 */
-@media only screen and (max-width : 568px) {
+@media only screen and (max-width : 568px) {	
 	.main-footer-content ul {
 		width: 70%;
 	}
